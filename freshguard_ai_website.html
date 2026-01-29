@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshGuard AI - Smart Food Storage predictors</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #00FF94;
+            --secondary: #0066FF;
+            --dark: #0A0E27;
+            --darker: #050814;
+            --light: #F0F4FF;
+            --accent: #FF006E;
+            --glow: rgba(0, 255, 148, 0.3);
+        }
+        
+        body {
+            font-family: 'Space Mono', monospace;
+            background: var(--darker);
+            color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        /* Animated Background */
+        .bg-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(90deg, rgba(0, 255, 148, 0.03) 1px, transparent 1px),
+                linear-gradient(rgba(0, 255, 148, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridMove 20s linear infinite;
+            opacity: 0.3;
+            z-index: 0;
+        }
+        
+        @keyframes gridMove {
+            0% { transform: perspective(500px) rotateX(60deg) translateY(0); }
+            100% { transform: perspective(500px) rotateX(60deg) translateY(50px); }
+        }
+        
+        .bg-orbs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+        
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.15;
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        .orb1 {
+            width: 400px;
+            height: 400px;
+            background: var(--primary);
+            top: -100px;
+            left: -100px;
+        }
+        
+        .orb2 {
+            width: 350px;
+            height: 350px;
+            background: var(--secondary);
+            bottom: -100px;
+            right: -100px;
+            animation-delay: 7s;
+        }
+        
+        .orb3 {
+            width: 300px;
+            height: 300px;
+            background: var(--accent);
+            top: 50%;
+            left: 50%;
+            animation-delay: 14s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(100px, -100px) scale(1.1); }
+            50% { transform: translate(-100px, 100px) scale(0.9); }
+            75% { transform: translate(100px, 100px) scale(1.05); }
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 2rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 255, 148, 0.1);
+            animation: slideDown 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        @keyframes slideDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .logo {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        nav {
+            display: flex;
+            gap: 2.5rem;
+        }
+        
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-size: 0.9rem;
+            position: relative;
+            transition: color 0.3s;
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        main {
+            position: relative;
+            z-index: 1;
+            padding-top: 120px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 6rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--light), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            color: rgba(240, 244, 255, 0.7);
+            max-width: 600px;
+            margin-bottom: 3rem;
+            animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
+        }
+        
+        .btn {
+            padding: 1.2rem 2.5rem;
+            font-family: 'Space Mono', monospace;
+            font-size: 1rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--darker);
+            box-shadow: 0 10px 40px rgba(0, 255, 148, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(0, 255, 148, 0.5);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: var(--darker);
+            transform: translateY(-3px);
+        }
+        
+        /* 3D Floating Food */
+        .floating-food {
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: float3d 6s ease-in-out infinite;
+        }
+        
+        @keyframes float3d {
+            0%, 100% { transform: translateY(-50%) rotateY(0deg); }
+            50% { transform: translateY(-60%) rotateY(180deg); }
+        }
+        
+        .food-icon {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, rgba(0, 255, 148, 0.2), rgba(0, 102, 255, 0.2));
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(0, 255, 148, 0.3);
+            box-shadow: 0 20px 60px rgba(0, 255, 148, 0.2);
+            animation: morphShape 8s ease-in-out infinite;
+        }
+        
+        @keyframes morphShape {
+            0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+            25% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
+            50% { border-radius: 50% 50% 30% 70% / 30% 70% 70% 30%; }
+            75% { border-radius: 30% 70% 50% 50% / 70% 30% 30% 70%; }
+        }
+        
+        /* Predictor Section */
+        .predictor-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem;
+        }
+        
+        .predictor-container {
+            background: rgba(10, 14, 39, 0.8);
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(0, 255, 148, 0.2);
+            border-radius: 30px;
+            padding: 4rem;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 30px 100px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        
+        .predictor-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .predictor-subtitle {
+            color: rgba(240, 244, 255, 0.6);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 1.5rem 1.5rem 1.5rem 4rem;
+            font-family: 'Space Mono', monospace;
+            font-size: 1.1rem;
+            background: rgba(5, 8, 20, 0.8);
+            border: 2px solid rgba(0, 255, 148, 0.3);
+            border-radius: 15px;
+            color: var(--light);
+            transition: all 0.3s;
+            margin-bottom: 2rem;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 30px rgba(0, 255, 148, 0.3);
+        }
+        
+        .predict-btn {
+            width: 100%;
+            padding: 1.5rem;
+            font-family: 'Syne', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--darker);
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 10px 40px rgba(0, 255, 148, 0.3);
+        }
+        
+        .predict-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(0, 255, 148, 0.5);
+        }
+        
+        /* Results */
+        .results-card {
+            margin-top: 3rem;
+            background: rgba(5, 8, 20, 0.9);
+            border: 2px solid var(--primary);
+            border-radius: 20px;
+            padding: 2.5rem;
+            display: none;
+            animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .results-card.show {
+            display: block;
+        }
+        
+        .result-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .result-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        
+        .result-food-name {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        
+        .result-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        
+        .stat-card {
+            background: rgba(0, 255, 148, 0.05);
+            border: 1px solid rgba(0, 255, 148, 0.2);
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+        }
+        
+        .stat-card:hover {
+            background: rgba(0, 255, 148, 0.1);
+            transform: translateY(-5px);
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: rgba(240, 244, 255, 0.5);
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-value {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        
+        .stat-unit {
+            font-size: 1rem;
+            color: rgba(240, 244, 255, 0.6);
+        }
+        
+        .result-category {
+            margin-top: 1.5rem;
+            padding: 1rem 1.5rem;
+            background: rgba(0, 102, 255, 0.1);
+            border-left: 4px solid var(--secondary);
+            border-radius: 10px;
+        }
+        
+        .category-value {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+        
+        /* Features */
+        .features-section {
+            padding: 8rem 4rem;
+        }
+        
+        .section-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 4rem;
+            background: linear-gradient(135deg, var(--light), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .feature-card {
+            background: rgba(10, 14, 39, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 255, 148, 0.2);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: all 0.4s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 60px rgba(0, 255, 148, 0.2);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .feature-description {
+            color: rgba(240, 244, 255, 0.7);
+            line-height: 1.6;
+        }
+        
+        footer {
+            padding: 3rem;
+            text-align: center;
+            border-top: 1px solid rgba(0, 255, 148, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3rem; }
+            .floating-food { display: none; }
+            nav { display: none; }
+            .result-stats { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-orbs">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+    
+    <header>
+        <div class="logo">FreshGuard </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#predict">Predict</a>
+            <a href="#features">Features</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <h1>Smart Food Storage<br>Powered by AI</h1>
+            <p>Predict optimal temperature and maximum storage days for any food item with machine learning precision</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('predict').scrollIntoView({behavior:'smooth'})">Try Now</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">Learn More</button>
+            </div>
+            <div class="floating-food">
+                <div class="food-icon">🥗</div>
+            </div>
+        </section>
+        
+        <section id="predict" class="predictor-section">
+            <div class="predictor-container">
+                <h2 class="predictor-title">Food Storage Predictor</h2>
+                <p class="predictor-subtitle">Enter any food item to get instant AI-powered storage recommendations</p>
+                
+                <input type="text" id="foodInput" placeholder="e.g., chicken, milk, apple, broccoli...">
+                
+                <button class="predict-btn" id="predictBtn">
+                    Predict Storage Conditions
+                </button>
+                
+                <div class="results-card" id="resultsCard">
+                    <div class="result-header">
+                        <div class="result-icon" id="resultIcon">🥬</div>
+                        <div class="result-food-name" id="resultFoodName">Chicken</div>
+                    </div>
+                    
+                    <div class="result-stats">
+                        <div class="stat-card">
+                            <div class="stat-label">Optimal Temperature</div>
+                            <div class="stat-value">
+                                <span id="resultTemp">0</span><span class="stat-unit">°C</span>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-label">Max Storage Days</div>
+                            <div class="stat-value">
+                                <span id="resultDays">0</span><span class="stat-unit"> days</span>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-label">Temperature Range</div>
+                            <div class="stat-value" style="font-size: 1.3rem;" id="resultRange">-2°C to 2°C</div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-label">Optimal Humidity</div>
+                            <div class="stat-value">
+                                <span id="resultHumidity">90</span><span class="stat-unit">%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="result-category">
+                        <div class="category-value" id="resultCategory">MEAT</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="features" class="features-section">
+            <h2 class="section-title">Why FreshGuard AI?</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3 class="feature-title">AI-Powered Predictions</h3>
+                    <p class="feature-description">Advanced machine learning models trained on 81+ food items with 99.2% accuracy</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Instant Results</h3>
+                    <p class="feature-description">Get optimal temperature and storage duration in milliseconds</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Fuzzy Matching</h3>
+                    <p class="feature-description">Smart typo correction ensures you always get results</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 FreshGuard AI. Powered by Machine Learning.</p>
+    </footer>
+    
+    
+      <script>
+let foodData = {};
+
+// Load CSV file
+fetch("global_food_storage_1000_items.csv")
+    .then(response => response.text())
+    .then(csv => {
+        const rows = csv.split("\n").slice(1);
+
+        rows.forEach(row => {
+            if (!row.trim()) return;
+
+            const [food, temp, humidity, days, category] = row.split(",");
+
+            foodData[food.toLowerCase()] = {
+                temp: temp,
+                humidity: humidity,
+                days: days,
+                category: category,
+                range: calculateRange(temp),
+                icon: getIcon(category)
+            };
+        });
+
+        console.log("CSV Loaded:", foodData);
+    })
+    .catch(err => console.error("CSV Load Error:", err));
+
+
+// Temperature range auto calculation
+function calculateRange(temp) {
+    temp = parseFloat(temp);
+    return `${temp - 2}°C to ${temp + 2}°C`;
+}
+
+// Icon based on category
+function getIcon(category) {
+    category = category.toLowerCase();
+
+    if (category.includes("meat")) return "🍗";
+    if (category.includes("seafood")) return "🐟";
+    if (category.includes("fruit")) return "🍎";
+    if (category.includes("vegetable")) return "🥦";
+    if (category.includes("dairy")) return "🥛";
+    if (category.includes("grains")) return "🌾";
+    if (category.includes("bakery")) return "🍞";
+    if (category.includes("frozen")) return "❄️";
+    if (category.includes("prepared")) return "🍲";
+    if (category.includes("condiments")) return "🧂";
+
+    return "🍽️";
+}
+
+
+// Prediction button
+document.getElementById('predictBtn').addEventListener('click', () => {
+
+    const input = document.getElementById('foodInput').value.toLowerCase().trim();
+    const resultsCard = document.getElementById('resultsCard');
+
+    if (!input) {
+        alert("Please enter a food item");
+        return;
+    }
+
+    const data = foodData[input];
+
+    if (!data) {
+        alert("Food not found in dataset. Try another item.");
+        return;
+    }
+
+    document.getElementById('resultFoodName').textContent =
+        input.charAt(0).toUpperCase() + input.slice(1);
+
+    document.getElementById('resultIcon').textContent = data.icon;
+
+    document.getElementById('resultTemp').textContent = data.temp;
+    document.getElementById('resultDays').textContent = data.days;
+    document.getElementById('resultRange').textContent = data.range;
+    document.getElementById('resultHumidity').textContent = data.humidity;
+    document.getElementById('resultCategory').textContent = data.category.toUpperCase();
+
+    resultsCard.classList.add("show");
+});
+
+
+// Enter key support
+document.getElementById('foodInput').addEventListener('keypress', e => {
+    if (e.key === "Enter") {
+        document.getElementById('predictBtn').click();
+    }
+});
+
+
+    </script>
+</body>
+</html>

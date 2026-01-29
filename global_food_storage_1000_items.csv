@@ -1,0 +1,1001 @@
+food,optimal_temp_c,humidity_percent,max_storage_days,category
+Yogurt Local,4,88,27,Dairy
+Jam Imported,6,75,179,Condiments
+Noodles Sweet,6,83,3,Prepared Food
+Pasta,3,85,11,Prepared Food
+Duck Imported,1,86,4,Meat
+Pickle,5,75,186,Condiments
+Cake Organic,21,59,6,Bakery
+Goat Local,2,85,10,Meat
+Plum Local,2,88,18,Fruit
+Pork Organic,-1,89,11,Meat
+Sauce Sweet,2,65,183,Condiments
+Bun Organic,21,61,9,Bakery
+Frozen Peas Local,-16,63,317,Frozen
+Sandwich Premium,6,86,7,Prepared Food
+Yogurt Organic,2,80,17,Dairy
+Pork Local,-1,91,4,Meat
+Frozen Corn Sweet,-20,55,329,Frozen
+Crab Premium,-1,99,0,Seafood
+Cream,3,83,24,Dairy
+Goat Spicy,-1,91,8,Meat
+Frozen Chicken Organic,-19,62,325,Frozen
+Lobster Premium,-2,94,3,Seafood
+Milk Organic,4,85,30,Dairy
+Pasta Premium,4,86,7,Prepared Food
+Spinach,-1,92,17,Vegetable
+Apple Imported,4,89,21,Fruit
+Yogurt,5,84,25,Dairy
+Onion Premium,2,93,22,Vegetable
+Yogurt,4,84,30,Dairy
+Apple Spicy,2,86,27,Fruit
+Carrot Imported,1,93,24,Vegetable
+Frozen Chicken Local,-19,61,317,Frozen
+Wheat Sweet,19,58,198,Grains
+Lamb Spicy,-2,90,7,Meat
+Milk Fresh,3,89,19,Dairy
+Jam,4,66,184,Condiments
+Millet Organic,20,65,207,Grains
+Bread Spicy,20,58,3,Bakery
+Sardine Premium,-3,91,9,Seafood
+Barley Local,19,59,199,Grains
+Cake Spicy,19,56,6,Bakery
+Pasta Spicy,2,87,9,Prepared Food
+Oats,19,55,205,Grains
+Noodles Sweet,5,85,9,Prepared Food
+Millet,22,64,202,Grains
+Broccoli Organic,0,95,12,Vegetable
+Salmon Fresh,-1,100,3,Seafood
+Ketchup,4,66,187,Condiments
+Sandwich Fresh,3,83,10,Prepared Food
+Millet Organic,18,65,206,Grains
+Pastry Local,22,57,13,Bakery
+Cake Spicy,22,61,5,Bakery
+Chicken,-2,90,5,Meat
+Plum Premium,5,94,21,Fruit
+Cake Spicy,21,61,14,Bakery
+Soup Organic,5,82,12,Prepared Food
+Frozen Pizza Fresh,-18,55,328,Frozen
+Curry Spicy,3,87,6,Prepared Food
+Bun Imported,18,56,2,Bakery
+Pasta Spicy,4,86,5,Prepared Food
+Salmon Sweet,1,93,5,Seafood
+Donut Organic,22,64,3,Bakery
+Cream Fresh,4,80,29,Dairy
+Pasta Premium,3,80,6,Prepared Food
+Apple Premium,5,94,28,Fruit
+Bread Imported,21,63,10,Bakery
+Ketchup Organic,3,66,183,Condiments
+Pickle,2,75,189,Condiments
+Frozen Corn Local,-20,56,326,Frozen
+Pear Spicy,5,93,20,Fruit
+Jam Fresh,3,74,187,Condiments
+Milk Organic,2,88,29,Dairy
+Millet,22,55,210,Grains
+Cream Local,3,82,28,Dairy
+Oats Sweet,20,62,203,Grains
+Jam Sweet,4,65,177,Condiments
+Yogurt Organic,5,89,17,Dairy
+Tuna Imported,1,94,9,Seafood
+Mango Imported,3,87,16,Fruit
+Frozen Pizza Imported,-19,59,328,Frozen
+Crab Local,-3,95,8,Seafood
+Mayonnaise Local,2,74,181,Condiments
+Beef Spicy,2,89,14,Meat
+Plum Local,5,91,24,Fruit
+Frozen Peas Local,-20,65,324,Frozen
+Duck Local,0,87,10,Meat
+Donut Organic,19,55,9,Bakery
+Paneer,2,81,30,Dairy
+Soup Fresh,2,88,3,Prepared Food
+Goat Imported,-1,94,6,Meat
+Millet Organic,20,62,207,Grains
+Rice,19,63,203,Grains
+Jam Local,5,71,184,Condiments
+Bun Local,20,58,9,Bakery
+Quinoa,22,58,205,Grains
+Bread Spicy,22,60,3,Bakery
+Bread Premium,20,65,5,Bakery
+Orange Fresh,4,88,23,Fruit
+Rice Fresh,20,62,198,Grains
+Bun Organic,18,57,6,Bakery
+Ketchup,4,65,178,Condiments
+Tomato Fresh,0,96,16,Vegetable
+Soup Premium,3,90,10,Prepared Food
+Peach Organic,3,86,27,Fruit
+Pickle Fresh,4,74,186,Condiments
+Sauce Sweet,4,73,180,Condiments
+Quinoa Organic,18,62,209,Grains
+Crab Fresh,-2,90,11,Seafood
+Fried Rice,3,86,3,Prepared Food
+Jam Premium,6,74,179,Condiments
+Milk Imported,2,85,21,Dairy
+Millet Local,20,60,209,Grains
+Beef Local,2,95,5,Meat
+Sandwich Premium,5,83,9,Prepared Food
+Frozen Chicken,-19,60,327,Frozen
+Noodles Organic,3,90,4,Prepared Food
+Milk Fresh,3,87,24,Dairy
+Pear Organic,4,90,25,Fruit
+Salmon Spicy,1,93,0,Seafood
+Banana Spicy,4,91,25,Fruit
+Noodles Organic,3,85,12,Prepared Food
+Tuna Sweet,-3,92,13,Seafood
+Pastry Local,21,61,4,Bakery
+Spinach,1,97,25,Vegetable
+Turkey Sweet,2,94,14,Meat
+Frozen Chicken Fresh,-20,65,318,Frozen
+Pickle Imported,6,66,188,Condiments
+Tuna Organic,1,100,10,Seafood
+Mayonnaise Sweet,5,74,185,Condiments
+Noodles Spicy,5,82,11,Prepared Food
+Frozen Pizza,-18,58,324,Frozen
+Frozen Peas Local,-20,62,318,Frozen
+Pear Imported,3,92,17,Fruit
+Yogurt Sweet,5,81,21,Dairy
+Frozen Pizza Local,-16,65,329,Frozen
+Quinoa Spicy,22,62,203,Grains
+Millet Sweet,18,60,197,Grains
+Duck Spicy,1,92,2,Meat
+Yogurt,2,80,23,Dairy
+Fried Rice Imported,5,81,10,Prepared Food
+Pork Premium,0,90,3,Meat
+Kiwi Local,2,86,16,Fruit
+Bun Sweet,20,63,4,Bakery
+Frozen Pizza Sweet,-20,61,322,Frozen
+Cod,-1,92,0,Seafood
+Crab Premium,1,91,11,Seafood
+Cod Sweet,-1,94,5,Seafood
+Cabbage Fresh,1,90,12,Vegetable
+Lamb Organic,1,90,11,Meat
+Millet Organic,18,60,203,Grains
+Kiwi Fresh,4,85,15,Fruit
+Frozen Chicken Fresh,-20,60,328,Frozen
+Noodles Sweet,3,90,13,Prepared Food
+Cake Sweet,18,58,13,Bakery
+Frozen Pizza,-19,62,318,Frozen
+Grapes Sweet,3,85,15,Fruit
+Cabbage Premium,0,100,14,Vegetable
+Frozen Peas Sweet,-17,56,327,Frozen
+Noodles Imported,2,88,4,Prepared Food
+Crab Local,0,96,8,Seafood
+Oats Sweet,22,61,197,Grains
+Pickle Sweet,4,70,186,Condiments
+Donut Organic,21,64,4,Bakery
+Donut Spicy,18,64,6,Bakery
+Pickle Fresh,2,75,190,Condiments
+Cabbage Sweet,1,90,21,Vegetable
+Lobster Imported,0,95,6,Seafood
+Goat Imported,2,85,7,Meat
+Jam Local,2,66,179,Condiments
+Butter Premium,4,80,24,Dairy
+Grapes Fresh,3,87,20,Fruit
+Banana Local,1,89,18,Fruit
+Sauce Fresh,3,67,189,Condiments
+Bread Premium,21,57,8,Bakery
+Oats Premium,21,65,207,Grains
+Sauce Premium,6,72,185,Condiments
+Fried Rice Spicy,3,88,14,Prepared Food
+Cake Imported,18,57,11,Bakery
+Noodles Imported,2,84,6,Prepared Food
+Plum Spicy,1,93,27,Fruit
+Plum Fresh,5,94,23,Fruit
+Spinach Sweet,-1,90,23,Vegetable
+Frozen Peas,-16,56,326,Frozen
+Barley Organic,21,59,210,Grains
+Potato Sweet,3,96,25,Vegetable
+Turkey,-2,85,13,Meat
+Rice Sweet,21,62,202,Grains
+Donut Organic,22,65,6,Bakery
+Peach Fresh,5,89,21,Fruit
+Turkey Fresh,-1,89,12,Meat
+Tomato Imported,-1,98,12,Vegetable
+Soup Organic,4,88,14,Prepared Food
+Quinoa Local,18,61,208,Grains
+Donut Imported,19,56,6,Bakery
+Mayonnaise Sweet,2,65,180,Condiments
+Plum Organic,4,92,16,Fruit
+Goat Organic,2,92,12,Meat
+Fried Rice,5,82,11,Prepared Food
+Pickle Sweet,3,67,186,Condiments
+Chicken Premium,0,92,7,Meat
+Bun,19,64,14,Bakery
+Frozen Pizza,-16,64,317,Frozen
+Fried Rice Premium,2,86,15,Prepared Food
+Ketchup Organic,2,71,182,Condiments
+Spinach Sweet,0,96,17,Vegetable
+Frozen Chicken,-17,63,326,Frozen
+Potato Sweet,1,90,23,Vegetable
+Butter Imported,5,88,23,Dairy
+Duck Imported,0,92,7,Meat
+Curry Sweet,4,82,13,Prepared Food
+Crab Spicy,-3,100,7,Seafood
+Butter Organic,2,89,19,Dairy
+Cream Organic,2,83,29,Dairy
+Fried Rice Local,5,83,12,Prepared Food
+Ketchup Organic,2,66,179,Condiments
+Frozen Peas Organic,-20,56,327,Frozen
+Yogurt Premium,6,80,24,Dairy
+Carrot,0,94,20,Vegetable
+Pastry Imported,20,56,10,Bakery
+Pasta Local,5,80,13,Prepared Food
+Ketchup Spicy,4,67,186,Condiments
+Frozen Peas Sweet,-20,65,320,Frozen
+Cod Imported,1,96,3,Seafood
+Barley Organic,19,55,207,Grains
+Ketchup Spicy,2,65,185,Condiments
+Frozen Peas Spicy,-20,56,320,Frozen
+Onion,0,90,14,Vegetable
+Curry Imported,3,87,2,Prepared Food
+Fried Rice Organic,5,84,13,Prepared Food
+Spinach Organic,3,91,15,Vegetable
+Grapes Spicy,2,89,18,Fruit
+Sauce Fresh,3,65,177,Condiments
+Spinach Imported,3,98,15,Vegetable
+Lamb Premium,2,85,9,Meat
+Peach,5,87,26,Fruit
+Beef Organic,-1,92,9,Meat
+Rice Imported,21,59,205,Grains
+Lobster Organic,-2,97,2,Seafood
+Cheese Sweet,4,89,18,Dairy
+Barley Spicy,20,64,203,Grains
+Peach Spicy,4,90,20,Fruit
+Bread Sweet,18,63,2,Bakery
+Pickle Fresh,4,73,180,Condiments
+Pickle Premium,4,67,180,Condiments
+Grapes Spicy,2,95,24,Fruit
+Rice Spicy,19,60,209,Grains
+Sardine,0,97,4,Seafood
+Cream Fresh,6,80,21,Dairy
+Cheese Imported,2,80,25,Dairy
+Onion Organic,3,92,24,Vegetable
+Pasta Fresh,5,83,11,Prepared Food
+Cream Organic,3,80,21,Dairy
+Potato Spicy,3,93,15,Vegetable
+Frozen Pizza,-17,57,321,Frozen
+Pickle,5,67,186,Condiments
+Shrimp Organic,-2,97,7,Seafood
+Pasta Sweet,5,84,7,Prepared Food
+Pear Imported,4,93,21,Fruit
+Cream Imported,5,85,17,Dairy
+Sardine Local,0,96,1,Seafood
+Pickle Sweet,4,75,178,Condiments
+Carrot Organic,0,93,20,Vegetable
+Sandwich,6,88,14,Prepared Food
+Butter Premium,6,88,24,Dairy
+Cheese Local,6,80,29,Dairy
+Chicken Local,-1,90,15,Meat
+Orange Local,5,92,21,Fruit
+Milk,6,86,28,Dairy
+Lamb Organic,1,89,13,Meat
+Lettuce Spicy,2,100,23,Vegetable
+Sardine Spicy,1,98,13,Seafood
+Cabbage Fresh,-1,96,16,Vegetable
+Noodles Imported,4,80,11,Prepared Food
+Donut Organic,18,55,9,Bakery
+Cake Sweet,22,62,14,Bakery
+Pear Organic,1,92,19,Fruit
+Pasta Organic,2,81,5,Prepared Food
+Sardine,0,100,12,Seafood
+Sauce Fresh,5,67,185,Condiments
+Yogurt Organic,3,87,27,Dairy
+Paneer Spicy,6,81,23,Dairy
+Barley Spicy,21,55,206,Grains
+Wheat Local,18,61,202,Grains
+Pork Local,2,87,6,Meat
+Shrimp Imported,-3,98,11,Seafood
+Ketchup Fresh,5,67,179,Condiments
+Crab Imported,0,97,6,Seafood
+Cake,18,56,4,Bakery
+Frozen Corn,-19,63,325,Frozen
+Grapes Sweet,4,95,19,Fruit
+Shrimp Fresh,0,93,3,Seafood
+Curry Imported,4,89,7,Prepared Food
+Broccoli Fresh,0,96,22,Vegetable
+Tomato Organic,-1,98,19,Vegetable
+Fried Rice Local,2,84,15,Prepared Food
+Cream,5,84,17,Dairy
+Barley Imported,18,64,209,Grains
+Lobster Spicy,-1,95,8,Seafood
+Frozen Chicken Local,-17,60,326,Frozen
+Paneer Spicy,6,87,20,Dairy
+Cake Premium,22,59,1,Bakery
+Lettuce Spicy,3,99,15,Vegetable
+Cheese Sweet,3,88,30,Dairy
+Cake Premium,22,62,5,Bakery
+Lamb Sweet,1,93,3,Meat
+Sandwich Sweet,3,81,8,Prepared Food
+Banana Fresh,3,89,15,Fruit
+Pastry,18,56,14,Bakery
+Wheat Spicy,22,56,206,Grains
+Goat Imported,2,86,15,Meat
+Chicken Imported,2,95,4,Meat
+Cheese,2,86,29,Dairy
+Frozen Corn Organic,-19,65,318,Frozen
+Rice Sweet,22,63,208,Grains
+Frozen Corn Local,-17,58,329,Frozen
+Banana Sweet,2,88,23,Fruit
+Pear Spicy,1,88,22,Fruit
+Curry Local,5,83,14,Prepared Food
+Lobster Sweet,0,100,5,Seafood
+Pasta Organic,4,81,12,Prepared Food
+Butter Spicy,6,88,27,Dairy
+Grapes Local,1,91,20,Fruit
+Quinoa Imported,20,56,205,Grains
+Bread,18,59,4,Bakery
+Frozen Peas Organic,-20,57,325,Frozen
+Carrot,3,92,22,Vegetable
+Cake Sweet,21,59,2,Bakery
+Frozen Chicken Local,-18,58,324,Frozen
+Frozen Corn Imported,-16,64,325,Frozen
+Grapes,1,91,26,Fruit
+Pork,2,86,11,Meat
+Banana Fresh,3,93,27,Fruit
+Tuna Local,0,92,12,Seafood
+Pasta Spicy,3,87,14,Prepared Food
+Rice Imported,18,59,204,Grains
+Tomato Premium,-1,91,19,Vegetable
+Ketchup Local,3,69,189,Condiments
+Jam Local,5,72,189,Condiments
+Fried Rice Local,6,80,14,Prepared Food
+Carrot Spicy,0,91,16,Vegetable
+Bun Imported,19,56,3,Bakery
+Lamb Spicy,-1,90,6,Meat
+Tuna Organic,-3,91,5,Seafood
+Sauce Local,2,71,183,Condiments
+Pasta Imported,6,87,14,Prepared Food
+Banana Sweet,3,88,19,Fruit
+Bun Fresh,22,58,5,Bakery
+Goat Premium,1,87,7,Meat
+Tomato,3,97,18,Vegetable
+Kiwi Local,1,90,24,Fruit
+Crab Local,-2,97,6,Seafood
+Curry Organic,4,87,9,Prepared Food
+Lobster Local,0,95,2,Seafood
+Lobster Organic,-1,93,3,Seafood
+Pickle Fresh,6,73,184,Condiments
+Frozen Chicken Imported,-17,65,324,Frozen
+Curry Local,6,87,14,Prepared Food
+Milk Fresh,5,87,23,Dairy
+Rice Imported,20,65,203,Grains
+Shrimp,-1,93,8,Seafood
+Pear Organic,4,92,17,Fruit
+Jam Organic,6,72,190,Condiments
+Potato Spicy,-1,100,14,Vegetable
+Frozen Pizza Spicy,-16,61,323,Frozen
+Millet Imported,20,56,201,Grains
+Cabbage Premium,1,90,12,Vegetable
+Barley Sweet,22,55,206,Grains
+Plum Premium,4,91,28,Fruit
+Cod Local,-3,96,1,Seafood
+Sardine Spicy,-3,95,5,Seafood
+Tuna Fresh,-2,98,5,Seafood
+Mango Organic,3,87,26,Fruit
+Frozen Fish Imported,-19,65,325,Frozen
+Potato Local,1,99,13,Vegetable
+Onion,-1,92,17,Vegetable
+Lobster Spicy,1,100,7,Seafood
+Pickle Local,2,70,188,Condiments
+Frozen Corn Imported,-19,65,327,Frozen
+Cake Local,21,62,14,Bakery
+Milk Imported,2,81,21,Dairy
+Chicken Spicy,2,91,10,Meat
+Soup,4,87,12,Prepared Food
+Broccoli,-1,91,15,Vegetable
+Bun Organic,21,56,11,Bakery
+Sauce Organic,5,68,187,Condiments
+Rice Sweet,18,59,204,Grains
+Pickle Spicy,4,73,178,Condiments
+Cream Local,5,85,22,Dairy
+Shrimp Imported,-3,97,6,Seafood
+Cake Organic,19,65,4,Bakery
+Lobster Local,-2,99,8,Seafood
+Salmon Imported,-1,90,13,Seafood
+Wheat,19,62,210,Grains
+Cabbage Sweet,2,91,24,Vegetable
+Cheese Premium,2,90,24,Dairy
+Spinach Premium,2,98,15,Vegetable
+Mayonnaise Organic,6,65,186,Condiments
+Ketchup Premium,6,68,182,Condiments
+Cream,2,81,30,Dairy
+Turkey,1,90,8,Meat
+Sauce Fresh,5,75,189,Condiments
+Frozen Fish Imported,-16,59,319,Frozen
+Cake,19,57,3,Bakery
+Chicken Imported,0,95,11,Meat
+Beef Sweet,2,86,9,Meat
+Grapes Fresh,4,91,20,Fruit
+Pear Fresh,5,87,27,Fruit
+Tuna Spicy,-2,98,1,Seafood
+Broccoli Imported,3,96,21,Vegetable
+Peach Spicy,4,85,26,Fruit
+Frozen Corn Fresh,-20,57,317,Frozen
+Chicken Premium,-2,87,10,Meat
+Banana Spicy,2,85,17,Fruit
+Quinoa Sweet,21,58,203,Grains
+Spinach Premium,-1,94,25,Vegetable
+Quinoa Sweet,18,65,208,Grains
+Curry Sweet,3,83,5,Prepared Food
+Onion Local,2,98,25,Vegetable
+Paneer Sweet,2,80,18,Dairy
+Pickle Fresh,5,73,188,Condiments
+Barley Premium,20,56,197,Grains
+Bread Fresh,19,60,9,Bakery
+Lettuce Sweet,0,94,17,Vegetable
+Sardine Imported,-3,95,8,Seafood
+Fried Rice Local,2,89,5,Prepared Food
+Frozen Pizza Local,-20,64,325,Frozen
+Frozen Corn Organic,-19,61,322,Frozen
+Mayonnaise Local,4,65,187,Condiments
+Cake Imported,18,58,14,Bakery
+Potato Organic,-1,95,14,Vegetable
+Lobster Local,0,90,13,Seafood
+Cream Fresh,3,80,27,Dairy
+Frozen Pizza Imported,-20,55,318,Frozen
+Tomato Spicy,-1,93,14,Vegetable
+Goat Sweet,-2,94,10,Meat
+Sandwich Premium,4,82,10,Prepared Food
+Peach Organic,5,91,16,Fruit
+Duck,2,85,13,Meat
+Fried Rice,3,89,5,Prepared Food
+Turkey Sweet,-1,85,14,Meat
+Pasta,4,90,15,Prepared Food
+Banana Spicy,4,86,27,Fruit
+Pickle Imported,3,75,180,Condiments
+Kiwi Organic,5,86,26,Fruit
+Apple Imported,3,85,22,Fruit
+Frozen Pizza Spicy,-17,65,329,Frozen
+Wheat Local,21,62,198,Grains
+Butter Organic,2,89,30,Dairy
+Frozen Peas Spicy,-16,60,328,Frozen
+Milk Fresh,2,80,20,Dairy
+Cabbage Organic,-1,96,23,Vegetable
+Shrimp Fresh,-3,90,10,Seafood
+Millet Spicy,18,63,203,Grains
+Orange Organic,4,89,15,Fruit
+Pork,1,85,5,Meat
+Quinoa Sweet,19,57,209,Grains
+Tuna Local,-2,92,4,Seafood
+Ketchup Imported,4,66,183,Condiments
+Oats Local,18,60,197,Grains
+Cheese Local,5,80,28,Dairy
+Sauce Organic,3,71,182,Condiments
+Mayonnaise Local,5,68,177,Condiments
+Banana Imported,5,92,28,Fruit
+Tomato Fresh,2,97,19,Vegetable
+Potato Spicy,1,94,23,Vegetable
+Oats Premium,19,55,203,Grains
+Oats Spicy,21,59,207,Grains
+Sauce Imported,6,74,178,Condiments
+Plum Local,3,88,24,Fruit
+Sardine Imported,0,92,6,Seafood
+Frozen Peas Sweet,-17,62,330,Frozen
+Apple,3,94,22,Fruit
+Jam Fresh,4,69,188,Condiments
+Onion Organic,2,99,21,Vegetable
+Frozen Fish,-19,58,327,Frozen
+Jam Premium,6,69,186,Condiments
+Banana Premium,5,85,15,Fruit
+Bun Sweet,21,65,11,Bakery
+Soup Premium,6,86,6,Prepared Food
+Pickle Premium,2,68,177,Condiments
+Broccoli Sweet,3,99,15,Vegetable
+Sandwich,3,83,5,Prepared Food
+Jam Local,3,74,177,Condiments
+Cheese Sweet,2,88,17,Dairy
+Mayonnaise Local,5,74,180,Condiments
+Goat,-2,89,4,Meat
+Mango Premium,4,88,24,Fruit
+Mayonnaise Fresh,3,75,177,Condiments
+Goat Organic,-2,92,4,Meat
+Butter Organic,6,80,28,Dairy
+Bun Sweet,19,64,13,Bakery
+Donut Local,21,62,7,Bakery
+Pork Spicy,1,89,7,Meat
+Cream Premium,3,84,25,Dairy
+Apple,4,90,23,Fruit
+Curry Premium,5,81,13,Prepared Food
+Mayonnaise Spicy,5,67,184,Condiments
+Pasta Premium,3,81,5,Prepared Food
+Millet Premium,18,58,210,Grains
+Cabbage Local,2,97,22,Vegetable
+Pasta Local,5,87,12,Prepared Food
+Noodles Fresh,3,85,15,Prepared Food
+Sardine Spicy,0,94,1,Seafood
+Orange Local,1,95,21,Fruit
+Butter Premium,6,81,21,Dairy
+Beef Sweet,0,93,5,Meat
+Frozen Fish Imported,-17,59,324,Frozen
+Lobster Organic,-2,91,1,Seafood
+Frozen Chicken Spicy,-20,63,330,Frozen
+Ketchup Sweet,3,67,178,Condiments
+Soup Sweet,4,82,12,Prepared Food
+Beef Imported,-1,95,13,Meat
+Tuna,-2,95,11,Seafood
+Lettuce Fresh,1,95,24,Vegetable
+Ketchup Organic,5,73,184,Condiments
+Pasta Sweet,4,83,15,Prepared Food
+Carrot Fresh,1,96,22,Vegetable
+Fried Rice,6,87,8,Prepared Food
+Shrimp Spicy,0,94,12,Seafood
+Barley Sweet,19,62,206,Grains
+Frozen Peas Imported,-16,56,318,Frozen
+Sardine Imported,0,98,0,Seafood
+Bun Imported,22,59,1,Bakery
+Barley Sweet,22,63,200,Grains
+Bread Local,19,63,14,Bakery
+Rice,21,58,202,Grains
+Mayonnaise Premium,5,75,183,Condiments
+Spinach Imported,0,99,12,Vegetable
+Broccoli Local,1,93,20,Vegetable
+Pastry Local,22,64,4,Bakery
+Yogurt Organic,2,88,20,Dairy
+Goat Spicy,0,86,9,Meat
+Mayonnaise Fresh,4,73,184,Condiments
+Tuna Spicy,0,90,1,Seafood
+Donut,18,62,6,Bakery
+Pastry Imported,22,63,12,Bakery
+Frozen Peas Organic,-18,58,322,Frozen
+Grapes Premium,3,94,20,Fruit
+Lettuce,3,94,14,Vegetable
+Lamb Sweet,-1,91,15,Meat
+Milk Spicy,3,82,19,Dairy
+Frozen Corn Local,-17,62,323,Frozen
+Cabbage,0,95,25,Vegetable
+Lamb,-2,87,6,Meat
+Frozen Peas Local,-19,60,322,Frozen
+Tomato Local,3,92,15,Vegetable
+Frozen Pizza Sweet,-17,65,325,Frozen
+Cream Imported,3,88,17,Dairy
+Goat Spicy,1,88,7,Meat
+Bread Premium,22,55,8,Bakery
+Sauce Spicy,5,66,180,Condiments
+Noodles Local,3,90,15,Prepared Food
+Frozen Corn Imported,-19,56,317,Frozen
+Oats Organic,22,58,201,Grains
+Paneer Fresh,6,89,18,Dairy
+Ketchup Sweet,5,66,185,Condiments
+Ketchup Spicy,2,74,182,Condiments
+Lettuce Spicy,3,90,19,Vegetable
+Pickle Spicy,2,67,183,Condiments
+Orange Sweet,5,94,21,Fruit
+Ketchup Spicy,5,73,188,Condiments
+Sauce Organic,2,74,188,Condiments
+Lobster Fresh,-1,98,8,Seafood
+Broccoli Local,-1,98,13,Vegetable
+Milk,4,90,17,Dairy
+Ketchup Sweet,3,73,189,Condiments
+Mayonnaise Fresh,2,72,178,Condiments
+Tuna Local,-3,98,10,Seafood
+Pork Fresh,-1,88,10,Meat
+Cabbage Imported,-1,94,21,Vegetable
+Pasta Imported,3,81,13,Prepared Food
+Milk Fresh,3,90,19,Dairy
+Rice Organic,22,56,207,Grains
+Pastry Spicy,18,56,6,Bakery
+Salmon Local,-3,94,2,Seafood
+Mayonnaise Premium,2,71,185,Condiments
+Fried Rice Spicy,2,83,2,Prepared Food
+Noodles,4,81,5,Prepared Food
+Frozen Pizza Sweet,-20,60,328,Frozen
+Soup Premium,4,86,8,Prepared Food
+Milk Organic,2,90,25,Dairy
+Fried Rice Organic,4,90,14,Prepared Food
+Soup Spicy,6,83,15,Prepared Food
+Spinach Premium,2,96,17,Vegetable
+Quinoa Premium,19,58,204,Grains
+Goat Sweet,-1,89,8,Meat
+Bread,20,56,1,Bakery
+Frozen Peas Sweet,-16,63,318,Frozen
+Cream Fresh,3,86,25,Dairy
+Curry Fresh,4,90,14,Prepared Food
+Bread Premium,20,61,4,Bakery
+Tomato Sweet,-1,90,12,Vegetable
+Goat Sweet,-1,91,11,Meat
+Bread Fresh,22,58,8,Bakery
+Cream Sweet,5,83,20,Dairy
+Banana Imported,1,88,22,Fruit
+Spinach,-1,93,24,Vegetable
+Sauce Sweet,5,72,182,Condiments
+Salmon Imported,0,95,7,Seafood
+Frozen Peas Premium,-19,63,320,Frozen
+Lamb,2,87,13,Meat
+Apple,1,91,18,Fruit
+Millet Fresh,20,62,206,Grains
+Duck Imported,-1,94,9,Meat
+Cheese Premium,6,90,21,Dairy
+Lobster,-3,96,8,Seafood
+Yogurt Sweet,3,87,24,Dairy
+Mango Fresh,5,94,20,Fruit
+Plum Organic,2,87,15,Fruit
+Noodles Fresh,4,89,11,Prepared Food
+Crab Organic,1,100,6,Seafood
+Milk Fresh,5,83,17,Dairy
+Lamb Imported,-2,90,13,Meat
+Millet Sweet,22,57,199,Grains
+Duck Organic,2,89,6,Meat
+Rice Spicy,19,59,201,Grains
+Ketchup Premium,3,66,177,Condiments
+Wheat Local,18,57,197,Grains
+Ketchup Premium,4,71,178,Condiments
+Onion Premium,1,96,24,Vegetable
+Pork,-2,85,4,Meat
+Goat Imported,0,87,11,Meat
+Pickle Local,5,73,190,Condiments
+Tomato Local,0,90,23,Vegetable
+Mayonnaise Premium,4,68,185,Condiments
+Soup Premium,2,81,15,Prepared Food
+Millet,21,59,198,Grains
+Mayonnaise Spicy,3,66,186,Condiments
+Fried Rice Imported,6,85,9,Prepared Food
+Tuna,-1,99,11,Seafood
+Wheat Sweet,20,57,210,Grains
+Soup Fresh,4,81,7,Prepared Food
+Soup Local,5,89,8,Prepared Food
+Kiwi Local,3,87,24,Fruit
+Shrimp,0,100,4,Seafood
+Duck,2,89,4,Meat
+Frozen Fish Organic,-16,55,319,Frozen
+Ketchup Organic,5,68,178,Condiments
+Oats Organic,18,65,204,Grains
+Pickle Imported,3,69,179,Condiments
+Cod Local,-1,98,3,Seafood
+Apple,4,87,18,Fruit
+Kiwi Imported,2,90,26,Fruit
+Quinoa Local,21,59,202,Grains
+Banana,3,90,27,Fruit
+Cod Sweet,-2,96,5,Seafood
+Bun,21,59,3,Bakery
+Bread Organic,18,57,10,Bakery
+Millet Spicy,19,59,209,Grains
+Beef Organic,2,93,11,Meat
+Chicken Premium,1,92,12,Meat
+Chicken Local,1,93,12,Meat
+Pastry Imported,20,65,12,Bakery
+Sardine Imported,1,91,13,Seafood
+Goat Sweet,0,92,4,Meat
+Millet Fresh,22,60,203,Grains
+Cheese Organic,4,80,17,Dairy
+Frozen Corn,-19,63,327,Frozen
+Carrot Local,1,93,24,Vegetable
+Tuna Imported,0,96,0,Seafood
+Bread Sweet,20,65,6,Bakery
+Bun Premium,18,58,10,Bakery
+Sauce Sweet,4,68,188,Condiments
+Ketchup,5,75,184,Condiments
+Sardine,0,90,11,Seafood
+Pasta Premium,3,83,11,Prepared Food
+Jam Spicy,5,67,182,Condiments
+Curry,2,86,4,Prepared Food
+Kiwi Fresh,5,85,15,Fruit
+Ketchup Premium,4,75,184,Condiments
+Noodles Fresh,3,86,8,Prepared Food
+Quinoa Imported,19,57,199,Grains
+Mayonnaise Premium,5,74,184,Condiments
+Cream Imported,4,84,21,Dairy
+Potato Premium,3,90,15,Vegetable
+Carrot Fresh,0,94,14,Vegetable
+Oats Local,18,59,198,Grains
+Goat Premium,-1,93,15,Meat
+Pork Local,1,95,10,Meat
+Sauce Organic,3,74,179,Condiments
+Lettuce Local,0,99,20,Vegetable
+Kiwi Local,3,91,15,Fruit
+Onion Sweet,3,94,18,Vegetable
+Tuna Imported,-1,90,4,Seafood
+Pork Sweet,1,88,11,Meat
+Banana Sweet,3,90,24,Fruit
+Cod Local,1,94,1,Seafood
+Cream Imported,2,89,17,Dairy
+Cream Spicy,6,84,18,Dairy
+Kiwi Sweet,4,92,23,Fruit
+Barley Imported,22,59,200,Grains
+Duck Organic,0,92,11,Meat
+Potato Imported,1,94,15,Vegetable
+Cheese Imported,2,90,18,Dairy
+Sandwich Premium,4,80,9,Prepared Food
+Wheat Imported,20,56,204,Grains
+Rice Premium,18,60,203,Grains
+Banana Spicy,2,94,15,Fruit
+Barley Organic,22,56,197,Grains
+Fried Rice Premium,4,89,15,Prepared Food
+Bun Premium,22,55,5,Bakery
+Spinach Premium,2,92,23,Vegetable
+Ketchup Local,5,69,180,Condiments
+Cod,0,94,11,Seafood
+Goat Premium,1,86,7,Meat
+Cabbage Imported,3,94,17,Vegetable
+Frozen Fish Local,-20,56,324,Frozen
+Plum Sweet,2,87,26,Fruit
+Donut Fresh,20,55,9,Bakery
+Lobster Spicy,-2,99,9,Seafood
+Grapes Premium,2,87,24,Fruit
+Salmon Sweet,-1,91,8,Seafood
+Duck Fresh,-1,87,12,Meat
+Lobster Organic,-3,90,7,Seafood
+Pickle Organic,5,74,181,Condiments
+Ketchup Premium,5,72,177,Condiments
+Mango Premium,5,90,15,Fruit
+Pear Premium,4,89,23,Fruit
+Sauce Imported,2,72,179,Condiments
+Pork Premium,-1,94,9,Meat
+Cheese Fresh,3,89,21,Dairy
+Fried Rice Premium,5,89,8,Prepared Food
+Donut Spicy,20,55,1,Bakery
+Bun,19,62,3,Bakery
+Mayonnaise Organic,6,71,180,Condiments
+Oats Organic,18,63,208,Grains
+Salmon Premium,-2,97,11,Seafood
+Jam Premium,4,67,186,Condiments
+Soup,4,89,3,Prepared Food
+Crab Fresh,-3,100,1,Seafood
+Tuna Organic,-3,92,10,Seafood
+Frozen Chicken Sweet,-19,63,322,Frozen
+Tuna,-3,95,6,Seafood
+Cod Spicy,-3,100,11,Seafood
+Frozen Peas Fresh,-16,56,319,Frozen
+Sauce,4,68,187,Condiments
+Quinoa Local,21,64,206,Grains
+Pickle Spicy,2,65,179,Condiments
+Bun Organic,19,63,2,Bakery
+Cheese Imported,6,90,23,Dairy
+Noodles Imported,4,84,4,Prepared Food
+Soup Imported,4,81,14,Prepared Food
+Fried Rice Organic,2,83,2,Prepared Food
+Paneer Premium,3,82,30,Dairy
+Goat Fresh,0,87,11,Meat
+Mango Spicy,3,87,16,Fruit
+Ketchup Imported,5,71,185,Condiments
+Oats,18,60,205,Grains
+Grapes Organic,5,86,22,Fruit
+Potato Sweet,-1,94,17,Vegetable
+Donut Premium,20,58,7,Bakery
+Goat Organic,2,93,3,Meat
+Butter Imported,5,83,25,Dairy
+Turkey Spicy,-1,88,12,Meat
+Paneer Sweet,3,81,17,Dairy
+Lobster Fresh,-2,100,11,Seafood
+Mango Spicy,3,88,15,Fruit
+Frozen Pizza Sweet,-20,58,324,Frozen
+Paneer,6,82,29,Dairy
+Grapes Premium,5,90,16,Fruit
+Pastry Premium,18,60,1,Bakery
+Ketchup Spicy,3,71,183,Condiments
+Sardine Fresh,-2,100,2,Seafood
+Donut Imported,21,61,14,Bakery
+Frozen Peas Premium,-16,65,324,Frozen
+Pastry Imported,21,62,7,Bakery
+Butter Imported,5,84,23,Dairy
+Tomato Imported,1,98,17,Vegetable
+Cake Imported,21,62,13,Bakery
+Chicken Premium,-2,91,7,Meat
+Mayonnaise Spicy,4,71,178,Condiments
+Lamb Premium,-2,94,5,Meat
+Pastry Local,19,65,8,Bakery
+Duck,-2,87,2,Meat
+Paneer Organic,4,86,17,Dairy
+Spinach Sweet,3,96,17,Vegetable
+Sauce Premium,5,69,187,Condiments
+Duck Imported,-1,95,8,Meat
+Pickle Fresh,3,75,190,Condiments
+Frozen Corn Sweet,-16,55,330,Frozen
+Bun Premium,20,56,9,Bakery
+Shrimp Imported,-2,91,0,Seafood
+Sauce,4,70,184,Condiments
+Fried Rice Spicy,5,81,12,Prepared Food
+Ketchup Fresh,3,69,177,Condiments
+Frozen Pizza,-19,55,322,Frozen
+Frozen Fish Local,-16,61,329,Frozen
+Frozen Chicken Fresh,-16,55,317,Frozen
+Barley Fresh,20,61,203,Grains
+Noodles Fresh,6,85,5,Prepared Food
+Sandwich Sweet,2,84,3,Prepared Food
+Butter Spicy,3,80,28,Dairy
+Beef Premium,2,91,11,Meat
+Peach Sweet,2,88,17,Fruit
+Sardine Organic,-2,92,5,Seafood
+Jam Premium,5,70,185,Condiments
+Spinach Fresh,3,96,14,Vegetable
+Yogurt Local,6,82,21,Dairy
+Sardine Spicy,-1,94,5,Seafood
+Quinoa Sweet,19,63,209,Grains
+Sauce Sweet,4,66,184,Condiments
+Mayonnaise Sweet,5,70,186,Condiments
+Carrot Organic,0,93,24,Vegetable
+Milk Spicy,2,86,18,Dairy
+Ketchup,6,74,189,Condiments
+Milk Premium,5,90,23,Dairy
+Frozen Peas,-16,56,319,Frozen
+Butter Fresh,6,87,25,Dairy
+Bun Local,22,59,8,Bakery
+Millet Local,19,56,207,Grains
+Millet Sweet,21,60,200,Grains
+Ketchup Organic,2,73,178,Condiments
+Pasta Local,2,86,8,Prepared Food
+Frozen Fish Sweet,-20,61,318,Frozen
+Mayonnaise Local,3,74,183,Condiments
+Frozen Corn,-20,65,326,Frozen
+Pear Organic,4,90,28,Fruit
+Jam Spicy,2,75,178,Condiments
+Quinoa Sweet,19,65,199,Grains
+Cream Organic,5,88,19,Dairy
+Frozen Pizza Spicy,-19,62,321,Frozen
+Tuna,1,90,10,Seafood
+Chicken Premium,1,85,14,Meat
+Frozen Fish Imported,-19,62,327,Frozen
+Frozen Corn Fresh,-19,56,325,Frozen
+Cake Local,18,59,3,Bakery
+Pasta,5,80,10,Prepared Food
+Plum Fresh,3,93,21,Fruit
+Yogurt Local,4,86,28,Dairy
+Quinoa Sweet,21,60,197,Grains
+Pear Spicy,3,86,24,Fruit
+Quinoa Fresh,20,56,203,Grains
+Jam Imported,3,66,180,Condiments
+Cabbage Spicy,1,91,14,Vegetable
+Soup Local,5,84,15,Prepared Food
+Milk Premium,3,88,29,Dairy
+Cake Imported,20,56,5,Bakery
+Frozen Fish,-20,60,319,Frozen
+Mayonnaise Spicy,2,70,190,Condiments
+Lobster Premium,-2,91,12,Seafood
+Chicken Sweet,-2,87,2,Meat
+Lamb Imported,-2,90,11,Meat
+Frozen Fish Premium,-17,60,319,Frozen
+Onion Fresh,1,96,14,Vegetable
+Shrimp,-2,99,2,Seafood
+Tuna Organic,-1,99,3,Seafood
+Frozen Corn Fresh,-18,59,322,Frozen
+Onion Fresh,0,91,17,Vegetable
+Broccoli,-1,94,22,Vegetable
+Onion,-1,92,22,Vegetable
+Lobster Imported,1,94,6,Seafood
+Curry Imported,2,84,10,Prepared Food
+Onion Fresh,1,92,23,Vegetable
+Frozen Chicken Sweet,-17,59,328,Frozen
+Jam Sweet,6,70,184,Condiments
+Rice,20,55,197,Grains
+Frozen Chicken,-16,59,325,Frozen
+Wheat,20,64,203,Grains
+Tuna Fresh,-3,99,6,Seafood
+Frozen Chicken Fresh,-18,56,328,Frozen
+Cake Organic,20,60,7,Bakery
+Wheat Fresh,18,59,210,Grains
+Goat Sweet,-1,94,11,Meat
+Frozen Chicken,-19,60,318,Frozen
+Pickle Imported,2,65,180,Condiments
+Pickle Spicy,5,69,183,Condiments
+Bun Imported,20,65,12,Bakery
+Rice Spicy,22,57,200,Grains
+Rice Imported,18,64,198,Grains
+Tuna,-1,90,11,Seafood
+Cream Fresh,6,86,28,Dairy
+Frozen Peas Spicy,-20,59,327,Frozen
+Sandwich Premium,2,87,13,Prepared Food
+Pastry,21,63,2,Bakery
+Oats Sweet,22,59,197,Grains
+Lettuce Spicy,1,90,14,Vegetable
+Bun Fresh,21,59,12,Bakery
+Frozen Peas Organic,-20,61,321,Frozen
+Cod Fresh,-2,100,3,Seafood
+Bread Local,20,60,6,Bakery
+Oats,18,56,199,Grains
+Sauce Premium,6,73,177,Condiments
+Cream Spicy,6,81,25,Dairy
+Pork Organic,0,92,11,Meat
+Carrot Premium,2,98,17,Vegetable
+Broccoli,-1,98,24,Vegetable
+Frozen Corn Spicy,-19,62,325,Frozen
+Pear Spicy,5,88,24,Fruit
+Plum,3,89,24,Fruit
+Chicken Local,2,86,7,Meat
+Frozen Pizza Local,-16,60,327,Frozen
+Cake Imported,21,63,4,Bakery
+Bread Local,19,63,10,Bakery
+Cake Fresh,20,55,4,Bakery
+Lobster Premium,-3,99,0,Seafood
+Mayonnaise,2,75,177,Condiments
+Salmon,0,95,7,Seafood
+Donut Fresh,21,65,3,Bakery
+Paneer Organic,4,83,21,Dairy
+Oats Spicy,21,57,199,Grains
+Curry Imported,6,83,5,Prepared Food
+Cheese Imported,2,90,29,Dairy
+Donut Imported,20,57,8,Bakery
+Sauce,3,71,187,Condiments
+Frozen Chicken Organic,-18,63,318,Frozen
+Wheat Organic,21,55,206,Grains
+Sauce Organic,6,69,186,Condiments
+Butter Organic,6,87,23,Dairy
+Tomato Imported,2,92,15,Vegetable
+Cheese Sweet,5,86,20,Dairy
+Bun Imported,18,60,1,Bakery
+Cheese,6,89,18,Dairy
+Sauce Sweet,2,75,190,Condiments
+Donut Spicy,22,58,2,Bakery
+Duck Fresh,1,93,5,Meat
+Rice Premium,19,58,208,Grains
+Pastry Spicy,21,62,8,Bakery
+Frozen Corn Imported,-20,60,317,Frozen
+Mayonnaise Sweet,2,72,188,Condiments
+Millet Sweet,22,64,210,Grains
+Pickle Organic,4,65,190,Condiments
+Rice Sweet,22,62,208,Grains
+Shrimp Fresh,-3,90,0,Seafood
+Pickle Spicy,6,75,178,Condiments
+Peach Local,1,92,15,Fruit
+Pork Organic,-2,87,4,Meat
+Sardine Spicy,-3,98,8,Seafood
+Potato Organic,-1,99,21,Vegetable
+Mayonnaise Spicy,3,65,188,Condiments
+Donut Organic,18,56,2,Bakery
+Jam Spicy,6,75,181,Condiments
+Pasta Spicy,2,85,14,Prepared Food
+Soup,4,83,4,Prepared Food
+Pickle Spicy,3,69,178,Condiments
+Turkey Premium,0,93,4,Meat
+Yogurt,6,90,22,Dairy
+Plum Imported,5,85,28,Fruit
+Fried Rice Local,4,88,4,Prepared Food
+Bread Premium,18,57,8,Bakery
+Fried Rice Local,4,81,14,Prepared Food
+Plum Organic,5,85,20,Fruit
+Pastry Sweet,20,62,6,Bakery
+Onion Spicy,-1,94,21,Vegetable
+Oats Fresh,19,56,201,Grains
+Bun Organic,20,60,7,Bakery
+Cabbage,2,98,15,Vegetable
+Tomato Spicy,2,100,19,Vegetable
+Broccoli Imported,3,100,22,Vegetable
+Donut Premium,22,59,2,Bakery
+Lettuce Organic,3,94,21,Vegetable
+Sauce Organic,5,67,189,Condiments
+Pasta Fresh,2,81,11,Prepared Food
+Donut,21,58,10,Bakery
+Frozen Corn Sweet,-19,64,319,Frozen
+Cod Organic,-2,92,8,Seafood
+Bun Imported,20,55,10,Bakery
+Bun Fresh,20,63,13,Bakery
+Frozen Fish Organic,-17,64,329,Frozen
+Pastry Premium,20,59,8,Bakery
+Cheese Organic,4,81,17,Dairy
+Peach Imported,1,94,22,Fruit
+Rice Sweet,20,58,209,Grains
+Frozen Chicken Imported,-16,60,322,Frozen
+Spinach Spicy,1,91,24,Vegetable
+Ketchup,2,69,184,Condiments
+Chicken Imported,-1,94,8,Meat
+Pasta Premium,3,81,2,Prepared Food
+Soup Organic,6,89,3,Prepared Food
+Pork Local,-1,94,5,Meat
+Pasta Imported,4,87,13,Prepared Food
+Chicken Fresh,0,90,10,Meat
+Cod Premium,1,97,11,Seafood
+Butter Sweet,3,85,30,Dairy
+Plum Imported,3,87,25,Fruit
+Butter Premium,3,87,27,Dairy
+Lamb Spicy,2,92,8,Meat
+Frozen Corn Sweet,-17,65,325,Frozen
+Spinach Fresh,0,93,21,Vegetable
+Quinoa Spicy,21,60,210,Grains
+Shrimp Sweet,-3,95,13,Seafood
+Soup Local,2,88,12,Prepared Food
+Sauce Premium,4,69,188,Condiments
+Banana Imported,4,93,28,Fruit
+Goat Sweet,-2,86,15,Meat
+Sandwich Spicy,5,89,3,Prepared Food
+Pear Fresh,3,85,17,Fruit
+Jam Local,2,66,189,Condiments
+Cabbage Spicy,2,94,19,Vegetable
+Noodles Premium,3,82,6,Prepared Food
+Pear Sweet,2,89,18,Fruit
+Duck,0,88,6,Meat
+Barley Premium,21,64,199,Grains
+Sandwich Fresh,6,83,11,Prepared Food
+Turkey Imported,-2,91,3,Meat
+Banana Sweet,3,90,21,Fruit
+Kiwi Organic,1,89,19,Fruit
+Plum Fresh,1,95,24,Fruit
+Goat Imported,1,93,7,Meat
+Cream Fresh,4,88,22,Dairy
+Fried Rice Local,6,81,11,Prepared Food
